@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "module": "es6",
+        "noImplicitAny": true,
+        "outDir": "./dist/",
+        "jsx": "react",
+        "target": "es5",
+        "sourceMap": true
+    }
+  }
