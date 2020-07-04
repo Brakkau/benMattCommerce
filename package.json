@@ -4,17 +4,23 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "webpack-cli": "^3.3.12",
-    "webpack": "^4.43.0"
+    "ramda": "^0.27.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.3",
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/react": "^10.4.3",
     "@types/ramda": "^0.27.7",
     "@types/react": "^16.9.41",
     "@types/react-dom": "^16.9.8",
-    "ramda": "^0.27.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "typescript": "^3.9.6"
+    "jest": "^26.1.0",
+    "sass": "^1.26.9",
+    "ts-jest": "^26.1.1",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
