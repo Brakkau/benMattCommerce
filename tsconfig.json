@@ -1,13 +1,35 @@
 {
     "compilerOptions": {
-        "allowJs": true,
-        "allowSyntheticDefaultImports": true,
-        "esModuleInterop": true,
-        "module": "es6",
-        "noImplicitAny": true,
-        "outDir": "./dist/",
-        "jsx": "react",
-        "target": "es5",
-        "sourceMap": true
-    }
+      "target": "es2019",
+      "jsx": "react",
+      "moduleResolution": "node",
+      "lib": [
+        "esnext",
+        "dom"
+      ],
+      "baseUrl": ".",
+      "sourceMap": true,
+      "strict": true,
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "removeComments": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "preserveConstEnums": true,
+      "paths": {
+        "components/*": ["src/components/*"],
+        "actions/*": ["src/redux/actions/*"],
+        "reducers/*": ["src/redux/reducers/*"],
+        "lib/*": ["src/lib/*"],
+        "utils/*": ["src/utils/*"],
+        "config/*": ["src/config/*"],
+        "icons/*": ["src/icons/*"],
+        "styles/*": ["src/styles/*"],
+        "test-data/*": ["test-data/*"]
+      }
+    },
+    "exclude": [
+      "node_modules"
+    ]
   }
+  
