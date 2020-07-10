@@ -5,6 +5,6 @@ import { Title } from './components/title';
 
 const App = () => (
    <Title />
-);
+):;
 
 export default App;
