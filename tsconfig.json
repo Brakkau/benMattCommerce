@@ -29,7 +29,9 @@
       }
     },
     "exclude": [
-      "node_modules"
+      "node_modules",
+      "tsconfig",
+      "webpack.config"
     ]
   }
   

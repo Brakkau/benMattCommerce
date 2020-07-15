@@ -1,7 +1,8 @@
 {
   "plugins": [
     "@typescript-eslint",
-    "jest"
+    "jest",
+    "functional"
   ],
   "extends": [
     "airbnb-typescript",
@@ -9,7 +10,9 @@
     "plugin:jest/recommended",
     "plugin:prettier/recommended",
     "prettier/react",
-    "prettier/@typescript-eslint"
+    "prettier/@typescript-eslint",
+    "plugin:functional/external-recommended",
+    "plugin:functional/recommended"
   ],
   "env": {
     "node": true,
@@ -32,8 +35,8 @@
     "no-use-before-define": [
       "error",
       {
-        "functions": false,
-        "classes": true,
+        "functions": true,
+        "classes": false,
         "variables": true
       }
     ],
@@ -84,8 +87,8 @@
     "@typescript-eslint/no-use-before-define": [
       "error",
       {
-        "functions": false,
-        "classes": true,
+        "functions": true,
+        "classes": false,
         "variables": true,
         "typedefs": true
       }
@@ -100,21 +103,10 @@
   "overrides": [
     {
       "files": [
-        "./src/server/*"
-      ],
-      "rules": {
-        "import/no-extraneous-dependencies": "off",
-        "no-console": "off"
-      }
-    },
-    {
-      "files": [
         "./*.ts",
-        "./*.js",
         "**/*.d.ts",
         "./test-config/*",
         "**/*.spec.*",
-        "**/*.stories.*",
         "./src/utils/test/*"
       ],
       "rules": {
