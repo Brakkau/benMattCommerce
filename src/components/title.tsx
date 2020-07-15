@@ -1,7 +1,13 @@
-import React from "react";
+import React from 'react';
 
-export const Title = () => {
-  return <div>
-    <h1>Hello World</h1>
-  </div>
+const PureFunction = (wordOne: string, wordTwo: string): string => {
+  return `${wordOne} ${wordTwo}`;
+};
+
+export const Title = (): JSX.Element => {
+  return (
+    <div>
+      <h1>{PureFunction('Hello', 'World')}</h1>
+    </div>
+  );
 };
