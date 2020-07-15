@@ -4,10 +4,10 @@ const PureFunction = (wordOne: string, wordTwo: string): string => {
   return `${wordOne} ${wordTwo}`;
 };
 
-export const Title = (): JSX.Element => {
+export const Title = (PureFunction('Hello', 'World')) => {
   return (
     <div>
-      <h1>{PureFunction('Hello', 'World')}</h1>
+      <h1>{PureFunction}</h1>
     </div>
   );
 };
