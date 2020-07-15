@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { FunctionComponent } from 'react';
 
-const PureFunction = (wordOne: string, wordTwo: string): string => {
-  return `${wordOne} ${wordTwo}`;
+// For some reason this isn't working, any HTML element will pass this
+type HeadingElement = React.ReactElement<React.HTMLAttributes<HTMLHeadingElement>>;
+
+type Props = {
+  readonly children: HeadingElement | HeadingElement[];
 };
 
-export const Title = (PureFunction('Hello', 'World')) => {
+export const Title: FunctionComponent<Props> = (props: Props) => {
   return (
     <div>
-      <h1>{PureFunction}</h1>
+      {props.children}
     </div>
   );
 };
