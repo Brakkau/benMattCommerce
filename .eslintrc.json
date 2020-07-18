@@ -1,8 +1,7 @@
 {
   "plugins": [
     "@typescript-eslint",
-    "jest",
-    "functional"
+    "jest"
   ],
   "extends": [
     "airbnb-typescript",
@@ -11,8 +10,6 @@
     "plugin:prettier/recommended",
     "prettier/react",
     "prettier/@typescript-eslint",
-    "plugin:functional/external-recommended",
-    "plugin:functional/recommended"
   ],
   "env": {
     "node": true,

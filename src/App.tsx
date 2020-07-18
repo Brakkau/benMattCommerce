@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import { Title } from './components/title';
+import { Title } from './components/Title/Title';
 
 // eslint-disable-next-line functional/functional-parameters
 const App = (): React.ReactElement => (
