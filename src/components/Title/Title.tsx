@@ -8,5 +8,5 @@ export type Props = {
 };
 
 export const Title: FunctionComponent<Props> = (props: Props) => {
-  return <div>{props.children}</div>;
+  return <div className="title">{props.children}</div>;
 };

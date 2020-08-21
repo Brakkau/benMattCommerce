@@ -16,6 +16,14 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.scss$/i,
+        loader: 'css-loader',
+        options: {
+          modules: true,
+          url: true
+        },
+      },
+      {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
@@ -26,7 +34,7 @@ module.exports = {
         test: /\.tsx?$/,
         loader: 'ts-loader',
         exclude: /node_modules/
-      }
+      },
     ]
   },
   resolve: {
